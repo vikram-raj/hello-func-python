@@ -1,0 +1,24 @@
+specVersion: 0.34.0
+name: hello-func-python
+runtime: python
+registry: quay.io/viraj_1
+image: quay.io/viraj_1/hello-func-python:latest
+imageDigest: sha256:d81b29ecc641cb568013867dbc41403f9078556f63b5ef26b52cd3702b6bf2b1
+created: 2022-11-16T16:05:43.039972128+05:30
+invocation:
+  format: http
+build:
+  buildpacks: []
+  builder: pack
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: viraj
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
